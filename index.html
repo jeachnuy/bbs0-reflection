@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <style>
+            .text textarea {
+                display: block;
+                width: 100%;
+                height: 200px;
+                padding: 15px;
+                box-sizing: border-box;
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <form class="text" action="insert" method="POST">
+                <h1>掲示板</h1>
+                <h2>コメント</h2>
+                <p>
+                    名前：
+                    <input type="text" name="name" size="10">
+                </p>
+                <p>
+                    <textarea type="text" name="text"></textarea>
+                </p>
+                <p>
+                    <button type="submit">投稿</button>
+                </p>
+            </form>
+            <h2>コメントの削除</h2>
+            <a href="delete">全データの削除</a>
+            <h2>コメントの表示</h2>
+            <a href="select">全データの表示</a>
+        </fieldset>
+    </body>
+</html>
